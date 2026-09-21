@@ -40,6 +40,7 @@ export default function RevealSection({ children, direction = "left", className 
       ref={ref}
       className={[
         "reveal-section",
+        "reveal-vehicle",
         direction === "left" ? "reveal-left" : "reveal-right",
         isVisible ? "is-visible" : "",
         className,

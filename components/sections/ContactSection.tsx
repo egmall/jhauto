@@ -8,9 +8,10 @@ type ContactDetail = {
 
 type ContactSectionProps = {
   contactDetails: ContactDetail[];
+  locationUrl: string;
 };
 
-export default function ContactSection({ contactDetails }: ContactSectionProps) {
+export default function ContactSection({ contactDetails, locationUrl }: ContactSectionProps) {
   return (
     <section id="contact" className="border-t border-yellow-200 bg-[#fffefb]">
       <div className="mx-auto max-w-[1600px] px-4 py-16 sm:px-6 lg:px-8">
@@ -54,7 +55,7 @@ export default function ContactSection({ contactDetails }: ContactSectionProps) 
 
             <div className="mt-6 flex flex-col gap-3">
               <a
-                href="https://maps.google.com/?q=Kg+Goshen+Jalan+Lotong+89107+Kota+Marudu+Sabah"
+                href={locationUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex justify-center rounded-full bg-yellow-400 px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-yellow-300"

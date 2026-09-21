@@ -6,14 +6,13 @@ type HeroSectionProps = {
 
 export default function HeroSection({ trustBadges }: HeroSectionProps) {
   return (
-    <section className="relative isolate overflow-hidden bg-[#f3efe9]">
-      <div
-        className="absolute inset-0 opacity-80"
-        style={{
-          backgroundImage:
-            "linear-gradient(135deg, rgba(22,163,74,0.08) 0%, rgba(22,163,74,0.02) 100%), repeating-linear-gradient(135deg, rgba(18,52,45,0.06) 0 2px, transparent 2px 22px)",
-        }}
-      />
+    <section
+      className="relative isolate min-h-[calc(100vw*0.5625)] overflow-hidden bg-cover bg-center bg-no-repeat lg:min-h-[min(1080px,100vh)]"
+      style={{
+        backgroundImage:
+          "linear-gradient(90deg, rgba(243,239,233,0.94) 0%, rgba(243,239,233,0.82) 45%, rgba(17,24,39,0.45) 100%), url('/images/mainpage.jpg')",
+      }}
+    >
       <div
         className="absolute inset-y-0 right-0 w-[46%] bg-[#111827]"
         style={{ clipPath: "polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
@@ -31,39 +30,44 @@ export default function HeroSection({ trustBadges }: HeroSectionProps) {
         <div className="max-w-2xl pt-6 lg:pt-14">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-yellow-300 bg-yellow-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-amber-800">
             <BadgeCheck size={14} />
-            PIAM Panel • Mitsubishi Certified • Sabah Coverage
+            JH Workshop Sdn. Bhd.
           </div>
 
-          <p className="text-3xl font-light tracking-tight text-slate-700 md:text-4xl">Enriching Business</p>
+          <p className="text-2xl font-semibold tracking-tight text-white drop-shadow-[0_2px_3px_rgba(13,35,64,0.9)] md:text-3xl">
+            More Than A Workshop.
+          </p>
 
-          <h1 className="mt-3 text-4xl font-black leading-[0.95] tracking-[-0.05em] text-slate-900 md:text-5xl lg:text-[5rem]">
-            COMBINING <span className="text-[#0d8b74]">STRENGTHS,</span>
+          <h1 className="mt-3 text-4xl font-black leading-[0.95] tracking-[-0.05em] drop-shadow-[0_3px_4px_rgba(13,35,64,0.75)] md:text-5xl lg:text-[5rem]">
+            <span className="text-white">WELCOME</span> TO <span className="text-[#d62828]">JOO</span> <span className="text-[#facc15]">HWANG</span>
             <br />
-            HARNESSING <span className="text-[#0d8b74]">SYNERGIES</span>
+            <span className="text-[#0d2340]">WORKSHOP</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-            With over 25 years of experience in the business, we have established a trusted reputation among
-            leaders in the industry.
+          <p className="mt-6 max-w-xl text-lg font-semibold leading-8 text-white drop-shadow-[0_2px_3px_rgba(13,35,64,0.9)]">
+            We Keep You Moving.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
               href="#insurance-panels"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#0d8b74] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0b6e60]"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#d62828] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#b91f1f]"
             >
-              Explore Panel Services
+              Insurance Claims
               <ArrowRight size={16} />
             </a>
             <a
               href="tel:088662662"
-              className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white/60 px-6 py-3.5 text-sm font-semibold text-slate-800 transition hover:border-yellow-300"
+              className="inline-flex items-center justify-center rounded-full border-2 border-[#0d2340] bg-white px-6 py-3.5 text-sm font-semibold text-[#0d2340] transition hover:border-yellow-400 hover:bg-yellow-50"
             >
-              Call Workshop
+              Towing & Recovery
             </a>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-3">
+          <p className="mt-8 text-sm font-semibold uppercase tracking-[0.28em] text-slate-600">
+            Kota Marudu, Sabah <span className="px-2 text-[#d62828]">•</span> Since 2004
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-3">
             {trustBadges.map((badge) => (
               <div
                 key={badge}
@@ -88,7 +92,9 @@ export default function HeroSection({ trustBadges }: HeroSectionProps) {
           <div className="absolute bottom-0 left-8 right-0 top-8 hidden lg:block">
             <div
               className="absolute bottom-5 right-6 h-64 w-[78%] rounded-[32px] bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 opacity-95 shadow-2xl shadow-slate-900/30"
-              style={{ clipPath: "polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
+              style={{
+                clipPath: "polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%)",
+              }}
             />
 
             {[0, 1, 2].map((truckIndex) => (

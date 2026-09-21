@@ -15,7 +15,7 @@ export default function WhyChooseUsSection({ items }: WhyChooseUsSectionProps) {
     <section className="mx-auto max-w-[1600px] px-4 py-16 sm:px-6 lg:px-8">
       <div className="mb-8 text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Why choose us</p>
-        <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">Reliable repair standards and responsive support.</h2>
+        <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">RELIABLE REPAIR STANDARDS AND RESPONSIVE SUPPORT.</h2>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">

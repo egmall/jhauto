@@ -1,4 +1,4 @@
-import type { LucideIcon } from "lucide-react";
+import { CarFront, type LucideIcon } from "lucide-react";
 
 type TrustStripItem = {
   label: string;
@@ -11,7 +11,7 @@ type TrustStripSectionProps = {
 
 export default function TrustStripSection({ items }: TrustStripSectionProps) {
   return (
-    <section className="mx-auto max-w-[1600px] px-4 py-4 sm:px-6 lg:px-8">
+    <section className="road-divider mx-auto max-w-[1600px] px-4 py-4 sm:px-6 lg:px-8">
       <div className="overflow-hidden rounded-[26px] border border-yellow-200 bg-white py-4 shadow-sm shadow-yellow-100/60">
         <div className="flex min-w-max gap-8 px-4 text-sm font-semibold uppercase tracking-[0.2em] text-slate-600">
           {[...items, ...items].map((item, index) => {
@@ -23,6 +23,10 @@ export default function TrustStripSection({ items }: TrustStripSectionProps) {
               </div>
             );
           })}
+          <div className="vehicle-cruise flex items-center gap-3 whitespace-nowrap text-[#0d2340]">
+            <CarFront size={18} className="text-[#d62828]" />
+            On The Road Since 2004
+          </div>
         </div>
       </div>
     </section>

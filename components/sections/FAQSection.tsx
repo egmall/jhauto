@@ -12,7 +12,7 @@ export default function FAQSection({ items }: FAQSectionProps) {
     <section className="mx-auto max-w-[1600px] px-4 py-16 sm:px-6 lg:px-8">
       <div className="mb-8 text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">FAQ</p>
-        <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">Common questions from our customers.</h2>
+        <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">COMMON QUESTIONS FROM OUR CUSTOMERS.</h2>
       </div>
 
       <div className="space-y-4">

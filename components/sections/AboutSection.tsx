@@ -11,7 +11,7 @@ export default function AboutSection() {
 
       <div className="flex flex-col justify-center">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">About us</p>
-        <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">Engineering trust across every repair journey.</h2>
+        <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">ENGINEERING TRUST ACROSS EVERY REPAIR JOURNEY.</h2>
         <p className="mt-5 text-lg leading-8 text-slate-600">
           Joo Hwang Workshop Sdn Bhd is a premium automotive engineering and collision repair centre serving Northern Sabah with a focus on dependable service, accurate diagnostics, and insurance-backed restoration.
         </p>

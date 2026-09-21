@@ -24,7 +24,7 @@ export default function CaseStudiesSection({ tabs, activeTab, onTabChange, cases
       <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Case studies</p>
-          <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">Recent work with measurable turnaround outcomes.</h2>
+          <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">RECENT WORK WITH MEASURABLE TURNAROUND OUTCOMES.</h2>
         </div>
         <div className="inline-flex rounded-full border border-yellow-200 bg-white p-1">
           {tabs.map((tab) => (

@@ -39,9 +39,10 @@ const navItems = [
 ];
 
 const trustBadges = [
-  "PIAM Approved",
-  "25+ Years Active",
-  "Official Insurance Panelist",
+  "Towing & Recovery",
+  "Automotive Repair",
+  "Insurance Claims",
+  "Routine Service",
 ];
 
 const trustStrip = [
@@ -235,8 +236,7 @@ const contactDetails = [
   { icon: Clock3, title: "Business Hours", text: "Mon-Sat: 8:00 AM - 5:00 PM" },
 ];
 
-const googleReviewsUrl =
-  "https://www.google.com/maps/search/?api=1&query=Joo+Hwang+Workshop+Sdn+Bhd+Kota+Marudu+Sabah";
+const googleReviewsUrl = "https://maps.app.goo.gl/EQfsLEsZ9Bkc6HmeA";
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -297,8 +297,8 @@ export default function Home() {
       : 0;
 
   return (
-    <div className="min-h-screen bg-[#fffdf7] text-slate-800">
-      <div className="mx-auto w-full max-w-[1600px] px-0">
+    <div className="mx-auto min-h-screen w-full max-w-[1920px] bg-[#fffdf7] text-slate-800">
+      <div className="w-full px-0">
       <div className="fixed left-0 top-0 z-[70] h-1 w-full bg-yellow-200/80">
         <div
           className="h-full bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-300 transition-all duration-200"
@@ -336,21 +336,21 @@ export default function Home() {
         </button>
       )}
 
-      <div className="sticky top-0 z-50 border-b border-yellow-200 bg-[#fffefb]/95 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-[1600px] items-center justify-center gap-3 overflow-hidden px-4 py-2 text-center text-sm font-medium text-slate-700 lg:px-6">
-          <span className="inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500 shadow-[0_0_12px_rgba(16,185,129,0.9)]" />
+      <div className="sticky top-0 z-50 border-b border-[#0d2340] bg-[#0d2340] text-white">
+        <div className="mx-auto flex max-w-[1600px] items-center justify-center gap-3 overflow-hidden px-4 py-2 text-center text-xs font-bold uppercase tracking-[0.12em] lg:px-6">
+          <span className="inline-flex h-2.5 w-2.5 rounded-full bg-yellow-400 shadow-[0_0_12px_rgba(250,204,21,0.9)]" />
           <div className="flex min-w-0 animate-[marquee_18s_linear_infinite] items-center gap-8 whitespace-nowrap">
-            <span>🟢 WORKSHOP ACTIVE | 24/7 Emergency Towing Available</span>
-            <span>•</span>
-            <span>Kota Marudu • Kudat • Pitas • Kota Belud</span>
-            <span>•</span>
-            <span>Live Status: {currentTime}</span>
+            <span>WORKSHOP ACTIVE | 24/7 Emergency Towing Available</span>
+            <span className="text-yellow-400">•</span>
+            <span>Kota Marudu | Kudat | Pitas | Kota Belud</span>
+            <span className="text-yellow-400">•</span>
+            <span className="text-yellow-300">Live Status: {currentTime}</span>
           </div>
         </div>
       </div>
 
       <header
-        className={`sticky top-[40px] z-40 border-b border-yellow-200/80 bg-[#fffdf7]/80 backdrop-blur-md transition-all duration-300 ${
+        className={`sticky top-[40px] z-40 border-b-4 border-yellow-400 bg-white/95 backdrop-blur-md transition-all duration-300 ${
           headerCompact ? "shadow-sm" : "shadow-none"
         }`}
       >
@@ -361,7 +361,7 @@ export default function Home() {
         >
           <div className="flex items-center gap-3">
             <img
-              src="/images/company-logo.svg"
+              src="/images/jhauto.jpeg"
               alt="Joo Hwang Workshop Sdn Bhd logo"
               className={`w-auto transition-all duration-300 ${headerCompact ? "h-9" : "h-14"}`}
             />
@@ -369,9 +369,9 @@ export default function Home() {
 
           {!headerCompact && (
             <>
-              <nav className="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex">
+              <nav className="hidden items-center gap-8 text-sm font-bold uppercase tracking-[0.08em] text-[#0d2340] md:flex">
                 {navItems.map((item) => (
-                  <a key={item.label} href={item.href} className="transition hover:text-amber-700">
+                  <a key={item.label} href={item.href} className="relative py-2 transition hover:text-red-600 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-yellow-400 after:transition-all hover:after:w-full">
                     {item.label}
                   </a>
                 ))}
@@ -380,11 +380,11 @@ export default function Home() {
               <div className="flex items-center gap-3">
                 <a
                   href="tel:0198520907"
-                  className="hidden rounded-full border border-yellow-400/60 bg-yellow-100 px-4 py-2 text-sm font-semibold text-amber-800 transition hover:bg-yellow-200 sm:inline-flex"
+                  className="hidden rounded-full bg-[#d62828] px-4 py-2 text-sm font-bold text-white shadow-sm shadow-red-200 transition hover:bg-[#b91f1f] sm:inline-flex"
                 >
-                  Emergency Towing: 019-8520907
+                  Emergency Towing
                 </a>
-                <button className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-yellow-200 bg-white text-slate-700 md:hidden">
+                <button className="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#0d2340] bg-white text-[#0d2340] md:hidden">
                   <Menu size={18} />
                 </button>
               </div>
@@ -441,7 +441,7 @@ export default function Home() {
           <FAQSection items={faqs} />
         </RevealSection>
         <RevealSection direction="right">
-          <ContactSection contactDetails={contactDetails} />
+          <ContactSection contactDetails={contactDetails} locationUrl={googleReviewsUrl} />
         </RevealSection>
       </main>
 

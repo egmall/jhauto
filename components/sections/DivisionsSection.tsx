@@ -17,7 +17,7 @@ export default function DivisionsSection({ divisions }: DivisionsSectionProps) {
       <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Core divisions</p>
-          <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">Built for repair, recovery, and restoration.</h2>
+          <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">BUILT FOR REPAIR, RECOVERY, AND RESTORATION.</h2>
         </div>
         <p className="max-w-xl text-slate-600">
           From diagnostics to insurer coordination, every division is designed to keep vehicles safe, roadworthy, and fully supported.

@@ -18,7 +18,7 @@ export default function ReviewsSection({ googleReviewsUrl, testimonials }: Revie
         <div className="mb-8 flex flex-col gap-4 text-center lg:flex-row lg:items-end lg:justify-between lg:text-left">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Google Reviews</p>
-            <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">Trusted by clients who depend on fast, quality repairs.</h2>
+            <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">TRUSTED BY CLIENTS WHO DEPEND ON FAST, QUALITY REPAIRS.</h2>
           </div>
 
           <a
@@ -88,7 +88,7 @@ export function LocationSection() {
         <div className="overflow-hidden rounded-[30px] border border-yellow-200 bg-white p-2 shadow-lg shadow-yellow-100/60">
           <iframe
             title="Joo Hwang Workshop location"
-            src="https://www.google.com/maps?q=Kg%20Goshen%2C%20Jalan%20Lotong%2C%2089107%20Kota%20Marudu%2C%20Sabah&z=13&output=embed"
+            src="https://www.google.com/maps?q=6.4781729%2C116.7686509&z=17&output=embed"
             className="h-[420px] w-full rounded-[22px] border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

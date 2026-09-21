@@ -42,7 +42,7 @@ export default function InsuranceSection({
         <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Insurance panels</p>
-            <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">Claims support across trusted partner insurers.</h2>
+            <h2 className="mt-3 text-3xl font-black text-slate-900 md:text-4xl">CLAIMS SUPPORT ACROSS TRUSTED PARTNER INSURERS.</h2>
           </div>
           <div className="flex max-w-md flex-col gap-3 sm:flex-row">
             <input
@@ -93,7 +93,7 @@ export default function InsuranceSection({
           <div className="mb-8 flex items-center justify-between gap-3">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Claims process</p>
-              <h3 className="mt-2 text-2xl font-black text-slate-900">Simple, transparent, and fast.</h3>
+              <h3 className="mt-2 text-2xl font-black text-slate-900">SIMPLE, TRANSPARENT, AND FAST.</h3>
             </div>
             <div className="hidden rounded-full border border-yellow-200 bg-yellow-50 px-4 py-2 text-sm text-slate-700 md:inline-flex">
               Step-by-step assistance
