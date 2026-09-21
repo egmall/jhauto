@@ -1,0 +1,11 @@
+<svg width="520" height="220" viewBox="0 0 520 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="260" cy="110" r="95" fill="#F4C300"/>
+  <circle cx="260" cy="110" r="80" fill="#F4C300" stroke="#F4C300" stroke-width="4"/>
+  <g>
+    <path d="M190 86H226L274 146H202C196.5 146 192 141.5 192 136V86H190ZM245 86H290L338 146H291L245 86Z" fill="#E31D1A"/>
+    <path d="M120 117C120 101.536 132.536 89 148 89H185V130H172L158 146H142L154 130H148C136.954 130 128 121.046 128 110V117H120Z" fill="#E31D1A"/>
+    <text x="250" y="96" text-anchor="middle" fill="#E31D1A" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="78">JH</text>
+    <text x="255" y="150" text-anchor="middle" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="23">Workshop</text>
+    <text x="255" y="174" text-anchor="middle" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="14">Sdn. Bhd.</text>
+  </g>
+</svg>
